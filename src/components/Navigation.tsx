@@ -5,9 +5,8 @@ import { useState, useEffect } from "react";
 const navItems = [
   { name: "About", href: "#about" },
   { name: "Orchestra", href: "#orchestra" },
-  { name: "Publications", href: "#publications" },
+  { name: "Research", href: "#publications" },
   { name: "Projects", href: "#projects" },
-  { name: "Ideas", href: "#ideas" },
 ];
 
 export default function Navigation() {
@@ -48,7 +47,7 @@ export default function Navigation() {
           ))}
         </div>
         <a
-          href="mailto:zechen@orchestra-research.com"
+          href="mailto:zechen_zhang@g.harvard.edu"
           className="text-sm text-muted hover:text-foreground transition-colors"
         >
           Contact

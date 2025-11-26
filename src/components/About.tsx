@@ -1,20 +1,19 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="py-32 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="grid md:grid-cols-[1fr_2fr] gap-16 items-start">
-          {/* Portrait placeholder */}
-          <div className="aspect-[3/4] bg-foreground/5 rounded-lg flex items-center justify-center">
-            <svg
-              viewBox="0 0 100 100"
-              className="w-24 h-24 text-muted/30"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="0.5"
-            >
-              <circle cx="50" cy="35" r="20" />
-              <path d="M20 90 Q20 60 50 60 Q80 60 80 90" />
-            </svg>
+          {/* Portrait */}
+          <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
+            <Image
+              src="/zechen_profile_photo.jpg"
+              alt="Zechen Zhang"
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
 
           {/* Bio */}
@@ -28,17 +27,33 @@ export default function About() {
 
             <div className="space-y-6 text-muted leading-relaxed">
               <p>
-                I&apos;m Zechen Zhang, a physicist turned AI researcher and founder.
-                My journey started in theoretical physics, studying tensor
-                networks and quantum gravity, before transitioning to machine
-                learning and AI systems.
+                I&apos;m Zechen Zhang. My path has wandered through philosophy and physics,
+                theoretical physics, evolutionary dynamics, and now machine learning—each
+                turn driven by the same question: how do complex systems learn and adapt?
               </p>
 
               <p>
-                I&apos;ve had the privilege of contributing to projects at Google
-                DeepMind, including work on AI co-scientists and robotics. These
-                experiences shaped my conviction that powerful AI should be a
-                tool for everyone, not a privilege for the few.
+                That question led me from studying the mathematics of evolution to the
+                statistical mechanics of neural networks, working with{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Haim_Sompolinsky"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:text-accent transition-colors border-b border-border hover:border-foreground"
+                >
+                  Haim Sompolinsky
+                </a>{" "}
+                at Harvard on deep learning theory. I&apos;m fascinated by how simple
+                theoretical frameworks can illuminate the behavior of systems far more
+                complex than they have any right to explain.
+              </p>
+
+              <p>
+                Along the way, I became deeply involved in{" "}
+                <span className="text-foreground">AI safety</span>—organizing Harvard&apos;s
+                first AI alignment seminar series and leading the graduate EA community.
+                I believe powerful AI should benefit humanity broadly, not remain a
+                privilege for the few.
               </p>
 
               <p>
@@ -51,15 +66,30 @@ export default function About() {
                 >
                   Orchestra
                 </a>
-                —infrastructure to distribute AI capabilities for scientific
-                research. I believe we&apos;re at an inflection point where AI can
-                dramatically accelerate discovery, and our responsibility is to
-                ensure this power benefits humanity broadly.
+                —AI co-scientist infrastructure to democratize scientific discovery.
+                It&apos;s where all these threads converge: theory, systems thinking,
+                and the conviction that transformative tools should be accessible to everyone.
               </p>
+            </div>
 
-              <p className="text-foreground font-medium">
-                Let&apos;s build the future of scientific discovery together.
-              </p>
+            {/* Quick facts */}
+            <div className="mt-10 pt-8 border-t border-border grid grid-cols-2 gap-6 text-sm">
+              <div>
+                <p className="text-muted mb-1">Location</p>
+                <p className="text-foreground">Cambridge, MA</p>
+              </div>
+              <div>
+                <p className="text-muted mb-1">Focus</p>
+                <p className="text-foreground">Building Orchestra</p>
+              </div>
+              <div>
+                <p className="text-muted mb-1">Research</p>
+                <p className="text-foreground">Deep Learning Theory</p>
+              </div>
+              <div>
+                <p className="text-muted mb-1">Cares About</p>
+                <p className="text-foreground">AI Safety</p>
+              </div>
             </div>
           </div>
         </div>

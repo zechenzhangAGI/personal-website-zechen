@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 pt-20">
       <div className="max-w-3xl mx-auto text-center">
-        {/* Abstract geometric illustration */}
+        {/* Abstract geometric illustration - neural network meets physics */}
         <div className="mb-12 animate-fade-in">
           <svg
             viewBox="0 0 200 200"
@@ -11,32 +11,39 @@ export default function Hero() {
             stroke="currentColor"
             strokeWidth="0.5"
           >
-            {/* Orbital paths - representing physics background */}
-            <ellipse cx="100" cy="100" rx="80" ry="30" className="draw-line" />
-            <ellipse
-              cx="100"
-              cy="100"
-              rx="80"
-              ry="30"
-              transform="rotate(60 100 100)"
-              className="draw-line"
-              style={{ animationDelay: "0.3s" }}
-            />
-            <ellipse
-              cx="100"
-              cy="100"
-              rx="80"
-              ry="30"
-              transform="rotate(120 100 100)"
-              className="draw-line"
-              style={{ animationDelay: "0.6s" }}
-            />
-            {/* Central node - representing AI/focus */}
-            <circle cx="100" cy="100" r="8" fill="currentColor" opacity="0.8" />
-            {/* Satellite nodes - representing distributed systems */}
-            <circle cx="100" cy="20" r="3" fill="currentColor" opacity="0.4" />
-            <circle cx="170" cy="135" r="3" fill="currentColor" opacity="0.4" />
-            <circle cx="30" cy="135" r="3" fill="currentColor" opacity="0.4" />
+            {/* Statistical mechanics / spin glass inspired pattern */}
+            <circle cx="100" cy="100" r="60" strokeDasharray="4 4" opacity="0.3" />
+            <circle cx="100" cy="100" r="40" strokeDasharray="2 2" opacity="0.4" />
+
+            {/* Neural network nodes */}
+            {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => {
+              const r = 60;
+              const x = 100 + r * Math.cos((angle * Math.PI) / 180);
+              const y = 100 + r * Math.sin((angle * Math.PI) / 180);
+              return (
+                <g key={angle}>
+                  <circle cx={x} cy={y} r="4" fill="currentColor" opacity="0.3" />
+                  <line x1="100" y1="100" x2={x} y2={y} opacity="0.15" />
+                </g>
+              );
+            })}
+
+            {/* Inner connections - branching structure */}
+            {[30, 150, 270].map((angle) => {
+              const r = 40;
+              const x = 100 + r * Math.cos((angle * Math.PI) / 180);
+              const y = 100 + r * Math.sin((angle * Math.PI) / 180);
+              return (
+                <g key={`inner-${angle}`}>
+                  <circle cx={x} cy={y} r="6" opacity="0.5" />
+                  <circle cx={x} cy={y} r="2" fill="currentColor" opacity="0.5" />
+                </g>
+              );
+            })}
+
+            {/* Central node */}
+            <circle cx="100" cy="100" r="10" strokeWidth="1" />
+            <circle cx="100" cy="100" r="4" fill="currentColor" opacity="0.8" />
           </svg>
         </div>
 
@@ -45,10 +52,11 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted mb-4 animate-fade-in-delay-2">
-          Physicist → AI Researcher → Founder
+          PhD @ Harvard · Deep Learning Theory · AI Safety
         </p>
 
         <p className="text-base md:text-lg text-muted/80 max-w-xl mx-auto mb-12 animate-fade-in-delay-3">
+          Using statistical mechanics to understand neural networks.
           Building{" "}
           <a
             href="#orchestra"
@@ -56,8 +64,7 @@ export default function Hero() {
           >
             Orchestra
           </a>{" "}
-          to distribute the power of AI systems to everyone—enabling scientific
-          discovery for all.
+          to democratize AI for scientific discovery.
         </p>
 
         <div className="flex items-center justify-center gap-6 text-sm text-muted animate-fade-in-delay-3">
@@ -80,12 +87,19 @@ export default function Hero() {
           </a>
           <span className="text-border">·</span>
           <a
-            href="https://twitter.com/zeaboradeng"
+            href="https://x.com/ZechenZhang5"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-foreground transition-colors"
           >
             Twitter
+          </a>
+          <span className="text-border">·</span>
+          <a
+            href="mailto:zechen_zhang@g.harvard.edu"
+            className="hover:text-foreground transition-colors"
+          >
+            Email
           </a>
         </div>
 

@@ -7,14 +7,14 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <p className="font-serif text-xl font-medium mb-2">Zechen Zhang</p>
             <p className="text-sm text-muted">
-              Physicist · AI Researcher · Founder
+              PhD Candidate @ Harvard · Building Orchestra
             </p>
           </div>
 
           {/* Links */}
           <div className="flex items-center gap-6">
             <a
-              href="mailto:zechen@orchestra-research.com"
+              href="mailto:zechen_zhang@g.harvard.edu"
               className="text-muted hover:text-foreground transition-colors"
               aria-label="Email"
             >
@@ -23,7 +23,7 @@ export default function Footer() {
               </svg>
             </a>
             <a
-              href="https://twitter.com/zeaboradeng"
+              href="https://x.com/ZechenZhang5"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted hover:text-foreground transition-colors"
@@ -53,6 +53,22 @@ export default function Footer() {
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.orchestra-research.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted hover:text-foreground transition-colors"
+              aria-label="Orchestra"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3" />
+                {[0, 60, 120, 180, 240, 300].map((angle) => {
+                  const x = 12 + 7 * Math.cos((angle * Math.PI) / 180);
+                  const y = 12 + 7 * Math.sin((angle * Math.PI) / 180);
+                  return <circle key={angle} cx={x} cy={y} r="1.5" fill="currentColor" />;
+                })}
               </svg>
             </a>
           </div>
