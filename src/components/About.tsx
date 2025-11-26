@@ -28,12 +28,12 @@ export default function About() {
             <div className="space-y-6 text-muted leading-relaxed">
               <p>
                 I&apos;m Zechen Zhang. My path has wandered through philosophy and physics,
-                theoretical physics, evolutionary dynamics, and now machine learning—each
+                theoretical physics, evolutionary dynamics, and deep learning—each
                 turn driven by the same question: how do complex systems learn and adapt?
               </p>
 
               <p>
-                That question led me from studying the mathematics of evolution to the
+                That curiosity took me from studying the mathematics of evolution to the
                 statistical mechanics of neural networks, working with{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Haim_Sompolinsky"
@@ -43,21 +43,21 @@ export default function About() {
                 >
                   Haim Sompolinsky
                 </a>{" "}
-                at Harvard on deep learning theory. I&apos;m fascinated by how simple
-                theoretical frameworks can illuminate the behavior of systems far more
-                complex than they have any right to explain.
+                at Harvard. I learned how simple theoretical frameworks can illuminate
+                systems far more complex than they have any right to explain.
               </p>
 
               <p>
                 Along the way, I became deeply involved in{" "}
                 <span className="text-foreground">AI safety</span>—organizing Harvard&apos;s
-                first AI alignment seminar series and leading the graduate EA community.
-                I believe powerful AI should benefit humanity broadly, not remain a
-                privilege for the few.
+                first AI alignment seminar series and remaining active in the Harvard AI Safety Team.
+                I believe powerful AI is arriving faster than most realize. And if it&apos;s going
+                to benefit humanity broadly, it can&apos;t remain a privilege gatekept by elite
+                institutions with massive compute budgets and exclusive networks.
               </p>
 
               <p>
-                Now I&apos;m building{" "}
+                That&apos;s why I&apos;m singularly focused on building{" "}
                 <a
                   href="https://www.orchestra-research.com"
                   target="_blank"
@@ -66,9 +66,8 @@ export default function About() {
                 >
                   Orchestra
                 </a>
-                —AI co-scientist infrastructure to democratize scientific discovery.
-                It&apos;s where all these threads converge: theory, systems thinking,
-                and the conviction that transformative tools should be accessible to everyone.
+                —AI scientific assistants that give everyone with a curious mind a Jarvis for science.
+                It&apos;s the most urgent thing I can work on.
               </p>
             </div>
 
@@ -83,12 +82,12 @@ export default function About() {
                 <p className="text-foreground">Building Orchestra</p>
               </div>
               <div>
-                <p className="text-muted mb-1">Research</p>
+                <p className="text-muted mb-1">Background</p>
                 <p className="text-foreground">Deep Learning Theory</p>
               </div>
               <div>
-                <p className="text-muted mb-1">Cares About</p>
-                <p className="text-foreground">AI Safety</p>
+                <p className="text-muted mb-1">Mission</p>
+                <p className="text-foreground">AI Scientist for Everyone</p>
               </div>
             </div>
           </div>

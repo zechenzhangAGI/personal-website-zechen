@@ -7,7 +7,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <p className="font-serif text-xl font-medium mb-2">Zechen Zhang</p>
             <p className="text-sm text-muted">
-              PhD Candidate @ Harvard · Building Orchestra
+              Building AI scientific assistants for everyone
             </p>
           </div>
 

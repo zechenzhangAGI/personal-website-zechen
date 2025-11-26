@@ -36,7 +36,7 @@ export default function Ideas() {
           Ideas
         </h2>
         <p className="text-muted mb-16 max-w-2xl">
-          Thoughts on AI, science, and building for humanity.
+          Thoughts on AI, science, and democratizing research.
         </p>
 
         <div className="space-y-6">

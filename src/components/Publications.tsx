@@ -253,8 +253,7 @@ export default function Publications() {
           Publications
         </h2>
         <p className="text-muted mb-16 max-w-2xl">
-          My research spans deep learning theory, interpretability, and AI agents for science—
-          using statistical mechanics to understand how neural networks learn and generalize.
+          From statistical mechanics of neural networks to interpretability and AI agents for science.
         </p>
 
         {/* Featured papers */}

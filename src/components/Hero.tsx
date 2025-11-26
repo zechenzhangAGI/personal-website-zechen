@@ -52,19 +52,26 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted mb-4 animate-fade-in-delay-2">
-          PhD @ Harvard · Deep Learning Theory · AI Safety
+          Building Orchestra · Researcher → Builder
         </p>
 
         <p className="text-base md:text-lg text-muted/80 max-w-xl mx-auto mb-12 animate-fade-in-delay-3">
-          Using statistical mechanics to understand neural networks.
-          Building{" "}
+          From deep learning theory to building{" "}
           <a
             href="#orchestra"
             className="text-foreground hover:text-accent transition-colors border-b border-border hover:border-foreground"
           >
-            Orchestra
+            AI scientific assistants
           </a>{" "}
-          to democratize AI for scientific discovery.
+          for everyone. Science shouldn&apos;t be gatekept—powerful AI can change that.{" "}
+          <a
+            href="https://calendly.com/zechen_zhang/chat-with-zechen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground hover:text-accent transition-colors border-b border-border hover:border-foreground"
+          >
+            Let&apos;s chat
+          </a>.
         </p>
 
         <div className="flex items-center justify-center gap-6 text-sm text-muted animate-fade-in-delay-3">

@@ -164,7 +164,7 @@ export default function Projects() {
           Projects
         </h2>
         <p className="text-muted mb-16 max-w-2xl">
-          Open-source tools and infrastructure for AI-powered scientific research.
+          AI infrastructure for science, agent experiments, and creative tools.
         </p>
 
         {/* Featured projects */}

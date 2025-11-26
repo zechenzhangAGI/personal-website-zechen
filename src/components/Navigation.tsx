@@ -7,6 +7,7 @@ const navItems = [
   { name: "Orchestra", href: "#orchestra" },
   { name: "Research", href: "#publications" },
   { name: "Projects", href: "#projects" },
+  { name: "Ideas", href: "#ideas" },
 ];
 
 export default function Navigation() {

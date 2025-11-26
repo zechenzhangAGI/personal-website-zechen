@@ -5,6 +5,7 @@ import Orchestra from "@/components/Orchestra";
 import Publications from "@/components/Publications";
 import Projects from "@/components/Projects";
 import Ideas from "@/components/Ideas";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
         <Publications />
         <Projects />
         <Ideas />
+        <Contact />
       </main>
       <Footer />
     </>
