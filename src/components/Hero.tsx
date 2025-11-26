@@ -52,11 +52,11 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-muted mb-4 animate-fade-in-delay-2">
-          Building Orchestra · Researcher → Builder
+          Scientist · Builder · Founder · Lifelong Learner
         </p>
 
         <p className="text-base md:text-lg text-muted/80 max-w-xl mx-auto mb-12 animate-fade-in-delay-3">
-          From deep learning theory to building{" "}
+          From physics to building{" "}
           <a
             href="#orchestra"
             className="text-foreground hover:text-accent transition-colors border-b border-border hover:border-foreground"
